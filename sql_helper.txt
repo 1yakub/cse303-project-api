@@ -1,0 +1,39 @@
+#create table 
+CREATE TABLE Users (
+    ID int NOT NULL UNIQUE,
+    username varchar(255) NOT NULL,
+    password varchar(255),
+
+);
+
+#create table with primary key
+CREATE TABLE Users (
+id int(11) NOT NULL AUTO_INCREMENT,
+   nafnleiks varchar(50),
+   leiklysing varchar(3000), 
+   prentadi varchar(1500), 
+   notkunarheimildir varchar(1000),
+   upplysingar varchar(1000),
+   ymislegt varchar(500),
+   PRIMARY KEY (id));
+
+#drop table 
+drop table users;
+
+
+#Insert 
+INSERT INTO USERS (username,password)  VALUES ( ?,?);
+
+#read
+SELECT * FROM USERS;
+
+#update
+UPDATE Users 
+    SET 
+        ${query}
+    WHERE
+        _id = ${userId};
+
+#delete 
+DELETE FROM Users WHERE _id = ${userId};
+
