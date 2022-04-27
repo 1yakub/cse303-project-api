@@ -2,8 +2,8 @@ const express = require("express");
 require("dotenv/config");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const errorHandler = require('./middileware/error-handler');
-const corsUnblocker = require('./middileware/cros-unblocker');
+const errorHandler = require('./middleware/error-handler');
+const corsUnblocker = require('./middleware/cros-unblocker');
 /* import routes */
 const users = require("./routes/user");
 const schoolRoutes = require('./routes/school');
